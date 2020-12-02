@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="./css/large.css">
     <script src="./js/navbar.js"></script>
     <script src="./js/webfonts.js"></script>
-    <script src="./js/rentals.js"></script>
 </head>
 <body onload="setTimes()">
     <header>
@@ -24,7 +23,7 @@
     </header>
     <nav class="topnav" id="myTopnav">
         <a href="./index.html">Home</a>
-        <a href="#rentals" class="active">Rentals</a>
+        <a href="./rentals.html">Rentals</a>
         <a href="./reservations.html">Reservations</a>
         <a href="./tours.html">Tours</a>
         <a href="./contact.html">Contact</a>
@@ -33,37 +32,11 @@
         </a>
     </nav>
     <main>
-        <section class="rentals">
-            <h2>Rental Options</h2>
-            <div class="cards">
-                <table>
-                    <tbody>
-                        <tr>
-                            <td>Rental Type</td>
-                            <td>Max. Persons</td>
-                            <td>Reserv 3h</td>
-                            <td>Reserv Day</td>
-                            <td>Walk-in 3h</td>
-                            <td>Walk-in Day</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
         <section>
-            <h2>Honda Metro</h2>
-            <img src="./images/honda-metro.jpg" alt="Honda Metro">
-            <h2>Honda Dio</h2>
-            <img src="./images/honda-dio.jpg" alt="Honda Dio">
-            <h2>Honda PCX 150</h2>
-            <img src="./images/honda-pcx.jpg" alt="Honda PCX">
-            <h2>Honda Pioneer ATV</h2>
-            <img src="./images/honda-pioneer.jpg" alt="Honda Pioneer">
-            <h2>Jeep Wrangler 4D</h2>
-            <img src="./images/jeep-4d.jpg" alt="Jeep Wrangler">
-            <h2>Jeep Wrangler 2D</h2>
-            <img src="./images/jeep-2d.jpg" alt="Jeep Wrangler 2D">
-            <br>
+            <h2 id="name"></h2>
+            <h3>We will get back to you shortly.</h3>
+            <p id="email"></p>
+            <p id="message"></p>
         </section>
     </main>
     <footer>
@@ -77,5 +50,6 @@
         </div>
         <p>Last Updated: <span id="lastModified"></span></p>
     </footer>
+    <script src="./js/contactthanks.js"></script>
 </body>
 </html>

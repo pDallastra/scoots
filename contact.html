@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots - Rentals</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/small.css">
+    <link rel="stylesheet" href="./css/medium.css">
+    <link rel="stylesheet" href="./css/large.css">
+    <script src="./js/navbar.js"></script>
+    <script src="./js/webfonts.js"></script>
+</head>
+<body onload="setTimes()">
+    <header>
+        <img src="./images/logo.png" alt="Scoots Logo">
+        <div>
+            <h1>Scoots Rental</h1>
+            <p>"You got to feel the happiness of riding."</p>
+        </div>
+    </header>
+    <nav class="topnav" id="myTopnav">
+        <a href="./index.html">Home</a>
+        <a href="./rentals.html">Rentals</a>
+        <a href="./reservations.html">Reservations</a>
+        <a href="./tours.html">Tours</a>
+        <a href="./contact.html" class="active">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+    <main>
+        <section>
+            <h2>Contact Us</h2>
+            <form action="contact-thanks.html">
+                <label for="name">
+                    Name
+                    <input type="text" name="name" id="name">
+                </label>
+                <br>
+                <label for="email">
+                    Email
+                    <input type="text" name="email" id="email">
+                </label>
+                <br>
+                <label for="message">
+                    Message
+                    <textarea type="text" name="message" id="message" placeholder="Accomodations/Where to drop-off, etc"></textarea>
+                </label>
+                <br>
+                <button type="submit" onclick="processData()" id="submitButton">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <p>+52 98 123 4321 | scoots@scoots.com | Scoots Rental &copy;<span id="copyYear"></span></p>
+        </div>
+        <div>
+        <img src="./images/instagram.png" alt="instagram logo">
+        <img src="./images/facebook.png" alt="facebook logo">
+        <img src="./images/pinterest.png" alt="pinterest logo">
+        </div>
+        <p>Last Updated: <span id="lastModified"></span></p>
+    </footer>
+    <script src="./js/contact.js"></script>
+</body>
+</html>

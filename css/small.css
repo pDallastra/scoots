@@ -106,6 +106,16 @@ main .summary div p {
     font-family: 'Archivo', sans-serif;   
 }
 
+
+main section .cards table tbody {
+    font-family: 'Archivo', sans-serif;
+    font-size: 14px;
+}
+
+main section .cards table tbody td {
+    padding: 10px 0;
+}
+
 footer {
     width: 100%;
     height: auto;

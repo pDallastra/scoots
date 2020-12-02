@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots - Rentals</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/small.css">
+    <link rel="stylesheet" href="./css/medium.css">
+    <link rel="stylesheet" href="./css/large.css">
+    <script src="./js/navbar.js"></script>
+    <script src="./js/webfonts.js"></script>
+    <script src="./js/reservation.js"></script>
+</head>
+<body onload="setTimes()">
+    <header>
+        <img src="./images/logo.png" alt="Scoots Logo">
+        <div>
+            <h1>Scoots Rental</h1>
+            <p>"You got to feel the happiness of riding."</p>
+        </div>
+    </header>
+    <nav class="topnav" id="myTopnav">
+        <a href="./index.html">Home</a>
+        <a href="./rentals.html">Rentals</a>
+        <a href="./reservations.html" class="active">Reservations</a>
+        <a href="./tours.html">Tours</a>
+        <a href="./contact.html">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+    <main>
+        <form action="thanks.html">
+            <h2>Rental Information</h2>
+            <label for="option">
+                Options
+                <select name="option" id="option"></select>
+            </label>
+            <br>
+            <label for="from">
+                Date
+                <input type="date" name="date" id="date">
+            </label>
+            <br>
+            <label for="From">
+                Period Rental
+                <br>
+                <select name="period" id="period">
+                    <option value="Half Day">Half Day</option>
+                    <option value="Full Day">Full Day</option>
+                </select>
+            </label>
+            <h2>Personal Information</h2>
+            <label for="name">
+                Name
+                <input type="text" name="name" id="name">
+            </label>
+            <br>
+            <label for="email">
+                Email
+                <input type="text" name="email" id="email">
+            </label>
+            <br>
+            <label for="phone">
+                Phone
+                <input type="text" name="phone" id="phone">
+            </label>
+            <br>
+            <label for="home">
+                Home State/Country
+                <input type="text" name="home" id="home">
+            </label>
+            <br>
+            <label for="cruise">
+                Cruise Line
+                <input type="text" name="cruise" id="cruise" placeholder="Optional">
+            </label>
+            <br>
+            <label for="comments">
+                Comments/Needs
+                <textarea type="text" name="comments" id="comments" placeholder="Accomodations/Where to drop-off, etc"></textarea>
+            </label>
+            <br>
+            <input type="checkbox" name="agree" id="agree" onchange="enableButton()">I agree with all the terms.
+            <br>
+            <button type="submit" onclick="processData()" disabled="true" id="submitButton">Submit</button>
+        </form>
+    </main>
+    <footer>
+        <div>
+            <p>+52 98 123 4321 | scoots@scoots.com | Scoots Rental &copy;<span id="copyYear"></span></p>
+        </div>
+        <div>
+        <img src="./images/instagram.png" alt="instagram logo">
+        <img src="./images/facebook.png" alt="facebook logo">
+        <img src="./images/pinterest.png" alt="pinterest logo">
+        </div>
+        <p>Last Updated: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
