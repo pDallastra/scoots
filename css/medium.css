@@ -1,0 +1,55 @@
+@media (min-width: 601px){ 
+    header, .topnav, main, footer {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    header {
+        height: 100px;
+        justify-content: unset;
+    }
+
+    header div h1 {
+        font-size: 36px;
+    }
+
+    header div p {
+        font-size: 12px;
+    }
+
+    header img {
+        width: 80px;
+        margin: 0 -20px 0 20px;
+    }
+
+    header div {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .topnav a.active {
+        text-decoration: underline;
+    }
+
+    main section h2 {
+        font-size: 28px;
+    }
+    
+    main section p, ul, main .summary div p {
+        font-size: 16px;
+    }
+
+    main section span {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    main section img {
+        width: 90%;
+        height: 300px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+} 

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots - Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/small.css">
+    <link rel="stylesheet" href="./css/medium.css">
+    <link rel="stylesheet" href="./css/large.css">
+    <script src="./js/navbar.js"></script>
+    <script src="./js/webfonts.js"></script>
+    <script src="./js/weatherCozumel.js"></script>
+</head>
+<body>
+    <header>
+        <img src="./images/logo.png" alt="Scoots Logo">
+        <div>
+            <h1>Scoots Rental</h1>
+            <p>"You got to feel the happiness of riding."</p>
+        </div>
+    </header>
+    <nav class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#rentals">Rentals</a>
+        <a href="#reservations">Reservations</a>
+        <a href="#tours">Tours</a>
+        <a href="#contact">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+    <main>
+        <section>
+            <h2>The most out with Scoots.</h2>
+            <p>
+                We offer the best rental options so you can enjoy more of Cozumel Island with better
+                mobility!
+            </p>
+            <span>Make a reservation Now!!!</span>
+            <a href="#reservation">
+                <img src="./images/pexels-dio-alif-utomo-2983665.jpg" alt="">
+            </a>
+            <ul>
+                <li>Honda Metro: $20 | Honda Dio: $40</li>
+                <li>Honda PCX150: $40 | Honda Pioneer ATV: $50</li>
+                <li>Jeep Wrangler - 4 door: $70</li>
+                <li>Jeep Wrangler - 2 door: $60</li>
+            </ul>
+        </section>
+        <div class="summary">
+            <h2>Weather Summary</h2>
+            <hr>
+            <div>
+                <p>Now</p>
+                <img src="" alt="" id="todayCond">
+                <p>Temp: <span id="todayTemp"></span></p>
+                <p>Hum: <span id="todayHum"></span></p>
+            </div>
+            <div>
+                <p id="day2"></p>
+                <img src="" alt="" id="tomorrowCond">
+                <p>Temp: <span id="tomorrowTemp"></span></p>
+                <p>Hum: <span id="tomorrowHum"></span></p>
+            </div>
+            <div>
+                <p id="day3"></p>
+                <img src="" alt="" id="nextCond">
+                <p>Temp: <span id="nextTemp"></span></p>
+                <p>Hum: <span id="nextHum"></span></p>
+            </div>
+        </div>
+        <!-- <section>
+            <h2>Cozumel Island</h2>
+            <p>"Cozumel, a mostly undeveloped Mexican island in the Caribbean Sea, is a popular 
+                cruise ship port of call famed for its scuba diving. Chankanaab is an eco 
+                park surrounding a lagoon with underwater caverns, home to dolphins, manatees and 
+                sea turtles."</p>
+            <img src="./images/pexels-rachel-claire-4577440.jpg" alt="">
+        </section> -->
+    </main>
+    <footer>
+        <div>
+            <p>+52 98 123 4321 | scoots@scoots.com | Scoots Rental &copy;2020</p>
+        </div>
+        <div>
+        <img src="./images/instagram.png" alt="">
+        <img src="./images/facebook.png" alt="">
+        <img src="./images/pinterest.png" alt="">
+        </div>
+    </footer>
+    <script src="./js/forecastDay.js"></script>
+</body>
+</html>
