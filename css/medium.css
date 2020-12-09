@@ -30,6 +30,10 @@
     .topnav a.active {
         text-decoration: underline;
     }
+    
+    main {
+        min-height: 83vh;
+    }
 
     main section h2 {
         font-size: 28px;
@@ -47,6 +51,14 @@
     main section img {
         width: 90%;
         height: 300px;
+    }
+
+    main section.rentals td {
+        font-size: 1.2rem;
+    }
+
+    main section.rentalOptions div div img {
+        height: unset;
     }
 
     footer {
