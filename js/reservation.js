@@ -35,7 +35,6 @@ function processData(){
     localStorage.setItem('option', option);
     localStorage.setItem('date', date);
     localStorage.setItem('period', period);
-    window.location.href = "./thanks.html"
 }
 
 var button = false;

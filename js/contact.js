@@ -6,6 +6,6 @@ function processData() {
     localStorage.clear();
 
     localStorage.setItem('name', name);
-    localStorage.setItem('email', name);
+    localStorage.setItem('email', email);
     localStorage.setItem('message', message);
 }

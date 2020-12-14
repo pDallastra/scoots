@@ -16,3 +16,4 @@ document.getElementById('cruise').textContent = cruise;
 document.getElementById('comments').textContent = comments;
 document.getElementById('date').textContent = date;
 document.getElementById('period').textContent = period;
+document.getElementById('option').textContent = option;

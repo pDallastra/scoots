@@ -33,61 +33,64 @@
         </a>
     </nav>
     <main>
-        <form action="thanks.html">
-            <h2>Rental Information</h2>
-            <label for="option">
-                Options
-                <select name="option" id="option"></select>
-            </label>
-            <br>
-            <label for="from">
-                Date
-                <input type="date" name="date" id="date">
-            </label>
-            <br>
-            <label for="From">
-                Period Rental
+        <section class="reservations">
+            <form action="thanks.html">
+                <h2>Rental Information</h2>
+                <label for="option">
+                    <p>Options</p>
+                    <select name="option" id="option" required></select>
+                </label>
                 <br>
-                <select name="period" id="period">
-                    <option value="Half Day">Half Day</option>
-                    <option value="Full Day">Full Day</option>
-                </select>
-            </label>
-            <h2>Personal Information</h2>
-            <label for="name">
-                Name
-                <input type="text" name="name" id="name">
-            </label>
-            <br>
-            <label for="email">
-                Email
-                <input type="text" name="email" id="email">
-            </label>
-            <br>
-            <label for="phone">
-                Phone
-                <input type="text" name="phone" id="phone">
-            </label>
-            <br>
-            <label for="home">
-                Home State/Country
-                <input type="text" name="home" id="home">
-            </label>
-            <br>
-            <label for="cruise">
-                Cruise Line
-                <input type="text" name="cruise" id="cruise" placeholder="Optional">
-            </label>
-            <br>
-            <label for="comments">
-                Comments/Needs
-                <textarea type="text" name="comments" id="comments" placeholder="Accomodations/Where to drop-off, etc"></textarea>
-            </label>
-            <br>
-            <input type="checkbox" name="agree" id="agree" onchange="enableButton()">I agree with all the terms.
-            <br>
-            <button type="submit" onclick="processData()" disabled="true" id="submitButton">Submit</button>
-        </form>
+                <label for="from">
+                    <p>Date</p>
+                    <input type="date" name="date" id="date" required>
+                </label>
+                <br>
+                <label for="From">
+                    <p>Period Rental</p>
+                    <br>
+                    <select name="period" id="period" required>
+                        <option value="Half Day">Half Day</option>
+                        <option value="Full Day">Full Day</option>
+                    </select>
+                </label>
+                <h2>Personal Information</h2>
+                <label for="name">
+                    <p>Name</p>
+                    <input type="text" name="name" id="name" required>
+                </label>
+                <br>
+                <label for="email">
+                    <p>Email</p>
+                    <input type="text" name="email" id="email" required>
+                </label>
+                <br>
+                <label for="phone">
+                    <p>Phone</p>
+                    <input type="text" name="phone" id="phone" required>
+                </label>
+                <br>
+                <label for="home">
+                    <p>Home State/Country</p>
+                    <input type="text" name="home" id="home" required>
+                </label>
+                <br>
+                <label for="cruise">
+                    <p>Cruise Line</p>
+                    <input type="text" name="cruise" id="cruise" placeholder="Optional">
+                </label>
+                <br>
+                <label for="comments">
+                    <p>Comments/Needs</p>
+                    <textarea type="text" name="comments" id="comments" placeholder="Accomodations/Where to drop-off, etc"></textarea>
+                </label>
+                <label for="checkbox">
+                    <p>I agree with all the terms.</p>
+                    <input type="checkbox" name="agree" id="agree" onchange="enableButton()">
+                </label>
+                <button type="submit" onclick="processData()" disabled="true" id="submitButton">Submit</button>
+            </form>
+        </section>
     </main>
     <footer>
         <div>

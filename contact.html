@@ -32,26 +32,40 @@
         </a>
     </nav>
     <main>
-        <section>
+        <section class="contact">
             <h2>Contact Us</h2>
+            <p>For any other questions!</p>
             <form action="contact-thanks.html">
                 <label for="name">
                     Name
-                    <input type="text" name="name" id="name">
+                    <input type="text" name="name" id="name" required>
                 </label>
                 <br>
                 <label for="email">
                     Email
-                    <input type="text" name="email" id="email">
+                    <input type="text" name="email" id="email" required>
                 </label>
                 <br>
                 <label for="message">
                     Message
-                    <textarea type="text" name="message" id="message" placeholder="Accomodations/Where to drop-off, etc"></textarea>
+                    <textarea type="text" name="message" id="message" placeholder="Accomodations/Where to drop-off, etc" required></textarea>
                 </label>
                 <br>
                 <button type="submit" onclick="processData()" id="submitButton">Submit</button>
             </form>
+        </section>
+        <section class="rentalOptions">
+            <h2>Our Locations</h2>
+            <div>
+                <div>
+                    <h2>Playa del Carmem-Cozumel</h2>
+                    <a href="https://goo.gl/maps/8Uv4TRwF56a5Kg7w5" target="_blank"><img src="./images/honda-metro.jpg" alt="Playa del Carmem-Cozumel"></a>
+                </div>
+                <div>
+                    <h2>Terminal Puerta Maya</h2>
+                    <a href="https://goo.gl/maps/KDBZMC6vc11bbgNX8" target="_blank"><img src="./images/honda-dio.jpg" alt="Terminal Puerta Maya"></a>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
