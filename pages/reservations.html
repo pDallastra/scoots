@@ -41,12 +41,12 @@
                     <select name="option" id="option" required></select>
                 </label>
                 <br>
-                <label for="from">
+                <label for="date">
                     Date
                     <input type="date" name="date" id="date" required>
                 </label>
                 <br>
-                <label for="From">
+                <label for="period">
                     Period Rental
                     <br>
                     <select name="period" id="period" required>
@@ -86,9 +86,9 @@
                 </label>
                 <label for="checkbox">
                     I agree with all the terms.
-                    <input type="checkbox" name="agree" id="agree" onchange="enableButton()">
+                    <input type="checkbox" name="checkbox" id="checkbox" onchange="enableButton()">
                 </label>
-                <button type="submit" onclick="processData()" disabled="true" id="submitButton">Submit</button>
+                <button type="submit" onclick="processData()" disabled id="submitButton">Submit</button>
             </form>
         </section>
     </main>
