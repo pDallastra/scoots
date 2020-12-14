@@ -1,11 +1,10 @@
-const data = 'data/data.json'
+const data = '../data/data.json'
 fetch(data)
   .then(function (response) {
     return response.json();
   })
   .then(function (jsonObject) {
       var rentals = jsonObject.rental
-      console.log(rentals)
 
       for (let i = 0; i < rentals.length; i++) {
         let tr = document.createElement('tr');

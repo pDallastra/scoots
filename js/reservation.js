@@ -1,4 +1,4 @@
-const data = 'data/data.json'
+const data = '../data/data.json'
 fetch(data)
   .then(function (response) {
     return response.json();

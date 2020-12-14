@@ -6,23 +6,23 @@
     <title>Scoots - Rentals</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <link rel="stylesheet" href="./css/navbar.css">
-    <link rel="stylesheet" href="./css/small.css">
-    <link rel="stylesheet" href="./css/medium.css">
-    <link rel="stylesheet" href="./css/large.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/small.css">
+    <link rel="stylesheet" href="../css/medium.css">
+    <link rel="stylesheet" href="../css/large.css">
     <script src="./js/navbar.js"></script>
     <script src="./js/webfonts.js"></script>
 </head>
 <body onload="setTimes()">
     <header>
-        <img src="./images/logo.png" alt="Scoots Logo">
+        <img src="../images/logo.png" alt="Scoots Logo">
         <div>
             <h1>Scoots Rental</h1>
             <p>"You got to feel the happiness of riding."</p>
         </div>
     </header>
     <nav class="topnav" id="myTopnav">
-        <a href="./index.html">Home</a>
+        <a href="../index.html">Home</a>
         <a href="./rentals.html">Rentals</a>
         <a href="./reservations.html">Reservations</a>
         <a href="./tours.html">Tours</a>
@@ -34,9 +34,15 @@
     <main>
         <section>
             <h2 id="name"></h2>
-            <h3>We will get back to you shortly.</h3>
-            <p id="email"></p>
-            <p id="message"></p>
+            <h3>Here is your confirmation</h3>
+            <p>Email: <span id="email"></span></p>
+            <p>Phone Number: </p><span id="phone"></span>
+            <p>Home Country: </p><span id="home"></span>
+            <p>Your Cruise: </p><span id="cruise"></span>
+            <p>Rental Option: </p><span id="option"></span>
+            <p>Date Reserved: </p><span id="date"></span>
+            <p>Period Reserved</p><span id="period"></span>
+            <p>Comments</p><span id="comments"></span>
         </section>
     </main>
     <footer>
@@ -50,6 +56,6 @@
         </div>
         <p>Last Updated: <span id="lastModified"></span></p>
     </footer>
-    <script src="./js/contactthanks.js"></script>
+    <script src="./js/thanks.js"></script>
 </body>
 </html>

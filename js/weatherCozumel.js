@@ -2,7 +2,6 @@ const apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=3530103&unit
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
-      console.log(jsObject);
       document.getElementById('todayTemp').textContent = jsObject.list[0].main.temp + '°F';
       document.getElementById('todayHum').textContent = jsObject.list[0].main.humidity + '%';
       todayImg = 'https://openweathermap.org/img/w/' + jsObject.list[0].weather[0].icon + '.png';
