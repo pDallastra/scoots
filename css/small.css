@@ -145,17 +145,19 @@ main section.rentalOptions div:nth-child(3) {
     margin-bottom: 20px;
 }
 
-main section.reservations {
+main section.reservations p {
     display: flex;
     flex-flow: column;
+    font-family: 'Archivo', sans-serif;
+    font-size: 1.2rem;
 }
 
-main section.reservations, section.contact form label {
+main section.reservations, section.contact form {
     width: 100%;
     font-size: 1.3rem;
 }
 
-main section.reservations form label input, select, textarea, section.contact form label input, select, textarea {
+main section.reservations form input, select, textarea, section.contact form input, select, textarea {
     width: 100%;
     font-size: 1.2rem;
 }
